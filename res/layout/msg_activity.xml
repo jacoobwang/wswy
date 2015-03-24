@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/head_bg"
+	    >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignWithParentIfMissing="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="true"
+	        android:ellipsize="middle"
+	        android:gravity="center_horizontal"
+	        android:text="通讯录"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	        />
+	    <ImageView
+	        android:id="@+id/msg_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/msg_add"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="5dp"
+	        />
+	</RelativeLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="340dp"
+	    android:orientation="vertical">
+		<ListView
+		    android:id="@+id/msg_list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    />
+	</LinearLayout>
+	
+	<RelativeLayout
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content">
+	     <LinearLayout 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="bottom"
+			android:layout_alignParentBottom="true">
+		   <GridView
+		       android:id="@id/gridBottom"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:listSelector="@null"
+		       android:descendantFocusability="blocksDescendants">
+		   </GridView>
+		</LinearLayout>
+	</RelativeLayout> 
+</LinearLayout>

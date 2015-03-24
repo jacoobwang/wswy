@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">万事无忧</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="loading">载入中...</string>
+	<string name="reg1">请输入手机号码...</string>
+	<string name="reg2">请输入固定号码...</string>
+	<string name="reg3">请输入QQ号码...</string>
+	<string name="reg4">请输入您的地址...</string>
+	<string name="reg5">请输入您的昵称...</string>
+	<string name="reg6">请设置密码...</string>
+	<string name="login">手机号码或昵称</string>
+	<string name="login_pwd">密码</string>
+	<string name="aboutus">
+	    \t\t万事无忧是一家为人民服务，为基层百姓提供最方便最实惠信息的非盈利机构。
+	    我们旨在服务大众，我们的追求是与人方便，手留余香。
+	    我们是一群热爱生活，热爱祖国，热爱穷苦百姓 的有志青年，希望获得更多老百姓的支持。
+	    您的支持将是我们前行的不竭动力！！</string>
+	 <string name="pull_to_refresh_pull_label">下拉刷新</string>
+     <string name="pull_to_refresh_release_label">松开后刷新</string>
+     <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+     <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+     <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+     <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>    
+	 <item name="tag_first" type="id"/>
+	 <item name="tag_second" type="id"/>  
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wswy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" /> 
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" /> 
+	<uses-permission android:name="android.permission.RECORD_AUDIO" /> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.example.wswy.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.wswy.LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.RegActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.StoreActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.StoreDetailActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.MsgActivity"
+            android:label="@string/app_name">
+        </activity>   
+        <activity
+            android:name="com.example.wswy.MeInfoActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.MsgChastActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.AddFriendActivity"
+            android:label="@string/app_name">
+        </activity>    
+        <activity
+            android:name="com.example.wswy.CartActivity"
+            android:label="@string/app_name">
+        </activity>   
+        <activity
+            android:name="com.example.wswy.StoreRecomendActivity"
+            android:label="@string/app_name">
+        </activity> 
+        <activity
+            android:name="com.example.wswy.MeInfoDetailActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.wswy.EditInfoActivity"
+            android:label="@string/app_name">
+        </activity>   
+        <activity
+            android:name="com.example.wswy.AboutusActivity"
+            android:label="@string/app_name">
+        </activity>   
+        <activity
+            android:name="com.example.wswy.SendInviteActivity"
+            android:label="@string/app_name">
+        </activity>    
+        <activity
+            android:name="com.example.wswy.MsgHandleActivity"
+            android:label="@string/app_name">
+        </activity>    
+    </application>
+
+</manifest>

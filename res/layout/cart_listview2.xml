@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="0dip"
+	>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/product_photo_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="1dp" >
+
+            <ImageView
+                android:id="@+id/product_photo"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/thumb_bg"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/product_photo_ly"
+            android:maxLength="15"
+            android:textColor="@color/lightblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cart_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/product_title"
+            android:layout_below="@id/product_title"
+            android:gravity="right"
+            android:text="总价:2500元 数量:1"
+            android:textColor="@color/gainsboro"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/pay_button"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/product_photo_ly"
+            android:layout_alignLeft="@+id/cart_total"
+            android:background="@color/login_submit"
+            android:text="去评价"
+            android:onClick="excuteButton"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>   
+</LinearLayout>  

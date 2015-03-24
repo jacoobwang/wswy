@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#808080" 
+    android:orientation="horizontal"
+    >
+<LinearLayout 
+   
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#808080" 
+    android:orientation="vertical">
+ 
+  				<TableLayout
+			   	android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent"	
+			    android:id="@+id/tableLayout_travel"	    
+		  >
+		   	 
+		   	 <TableRow 
+		   	     android:layout_width="fill_parent" 
+			     android:layout_height="fill_parent"
+			     android:paddingTop="5dip"
+			     android:layout_marginLeft="5dip"
+			     android:layout_marginRight="5dip">
+		   	     <!-- 1 -->
+		   	     <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:layout_weight="1"
+			     	android:padding="5dip"
+		   	         >
+
+
+		   	         <TextView
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="127dp"
+		   	             android:background="#FF3366"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="商品上架"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+		   	         
+		   	           <ImageView
+		   	             android:layout_width="wrap_content"
+		   	             android:layout_height="wrap_content"
+		   	             android:drawable="@drawable/shop_buy" 
+		   	             android:layout_gravity="center"/>
+
+		   	         <TextView
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="126dp"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#FF6600"
+		   	             android:drawableBottom="@drawable/shop_girl"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="待发货"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	          <TextView 
+		   	            android:layout_width="fill_parent" 
+			     		android:layout_height="fill_parent"
+			     		android:text="待付款"
+			     		android:textSize="15dip"
+			     		android:textColor="#ffffff"
+			    		android:background="#009933"
+			    		android:layout_weight="1"
+			    		android:padding="5dip"
+			    		android:layout_marginTop="10dip"
+			    		android:drawableBottom="@drawable/shop_girl"
+			    		android:gravity="top"
+		   	             />
+		   	         
+		   	     
+		   	     </LinearLayout>
+		   	     <!-- 2 -->
+		   	    <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:layout_weight="1"
+			     	android:padding="5dip"
+		   	         >
+
+		   	         <TextView
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:background="#CC33FF"
+		   	             android:drawableBottom="@drawable/home_train"
+		   	             android:gravity="top"
+		   	             android:padding="10dip"
+		   	             android:text="商品"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	         <TextView
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="109dp"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#00CCFF"
+		   	             android:drawableBottom="@drawable/home_scenery"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="合作伙伴"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	         <TextView
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#99CC00"
+		   	             android:drawableBottom="@drawable/home_lastmin"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="统计查询"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	         <TextView
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#FFCC00"
+		   	             android:drawableBottom="@drawable/home_lastmin"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="评价信息"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	     </LinearLayout>
+		   	     
+		   	 </TableRow>
+		  </TableLayout>
+					   	
+				   
+		    	
+		    
+		    	 
+</LinearLayout>
+</ScrollView>

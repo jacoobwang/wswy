@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sub_way" />
+    
+    <GridView
+	        android:id="@+id/gridOne"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#D9D9D9"
+	        android:gravity="center"
+	        android:numColumns="4"
+	        android:stretchMode="columnWidth"
+	        android:listSelector="@null"
+	        android:verticalSpacing="1dp" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#180151"
+        android:scrollbars="none"
+        >      
+		<LinearLayout 
+   	        android:layout_width="fill_parent" 
+	     	android:layout_height="fill_parent"
+	     	android:orientation="vertical"
+	     	android:layout_weight="1"
+	     	android:background="#180151"
+   	        >      
+	    <TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/tableLayout_home"
+	        >
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip">
+            <LinearLayout
+            	android:layout_width="0dip"
+            	android:layout_height="fill_parent"
+            	android:orientation="vertical"
+            	android:layout_weight="1"
+            	android:padding="2dip">
+            	<TextView
+            	     android:id="@+id/home_win8_01"
+	   	             android:layout_width="fill_parent"
+	   	             android:layout_height="127dp"
+	   	             android:background="#FF3366"
+	   	             android:gravity="top"
+	   	             android:padding="5dip"
+	   	             android:text="商品"
+	   	             android:textColor="#ffffff"
+	   	             android:drawableBottom="@drawable/shop_buy"
+	   	             android:textSize="15dip" />
+
+		   	    <TextView
+		   	         android:id="@+id/home_win8_02"
+	   	             android:layout_width="fill_parent"
+	   	             android:layout_height="126dp"
+	   	             android:layout_marginTop="10dip"
+	   	             android:background="#FF6600"
+	   	             android:drawableBottom="@drawable/shop_girl"
+	   	             android:gravity="top"
+	   	             android:padding="5dip"
+	   	             android:text="待付款"
+	   	             android:textColor="#ffffff"
+	   	             android:textSize="15dip" />
+
+		   	    <TextView 
+		   	        android:id="@+id/home_win8_03"
+	   	            android:layout_width="fill_parent" 
+		     		android:layout_height="fill_parent"
+		     		android:text="信息"
+		     		android:textSize="15dip"
+		     		android:textColor="#ffffff"
+		    		android:background="#009933"
+		    		android:layout_weight="1"
+		    		android:padding="5dip"
+		    		android:layout_marginTop="10dip"
+		    		android:drawableBottom="@drawable/shop_msg"
+		    		android:gravity="top"/>
+        	</LinearLayout>	
+        	
+            <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:layout_weight="1"
+			     	android:padding="5dip"
+		   	        >
+
+		   	        <TextView
+		   	             android:id="@+id/home_win8_04"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:background="#CC33FF"
+		   	             android:drawableBottom="@drawable/home_train"
+		   	             android:gravity="top"
+		   	             android:padding="10dip"
+		   	             android:text="火车票"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	         <TextView
+		   	             android:id="@+id/home_win8_05"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="109dp"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#00CCFF"
+		   	             android:drawableBottom="@drawable/shop_food"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="美食"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	         <TextView
+		   	             android:id="@+id/home_win8_06"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#99CC00"
+		   	             android:drawableBottom="@drawable/home_scenery"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="旅游"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+
+		   	         <TextView
+		   	             android:id="@+id/home_win8_07"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#FFCC00"
+		   	             android:drawableBottom="@drawable/shop_game"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="游戏中心"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15dip" />
+		   	     </LinearLayout>
+        	</TableRow>
+		</TableLayout>
+	     <RadioGroup
+	           android:id="@+id/home_radio"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/home_bottom"
+	           android:orientation="horizontal"> 
+	       		<RadioButton
+	       		    android:id="@+id/call_button"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_weight="1"
+	       		    android:background="@drawable/call_button" 
+	       		    android:button="@null"
+	       		    />
+			   	<RadioButton 
+			   	    android:id="@+id/talk_button"
+			   	    android:layout_width="wrap_content"
+			   	    android:layout_height="wrap_content"
+			   	    android:layout_weight="1"
+			   	    android:background="@drawable/talk_button"	
+			   	    android:button="@null"	   	    
+			   	    />         
+	       </RadioGroup>    
+	</LinearLayout>  	    
+   </ScrollView> 
+</LinearLayout>     
